@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.atm_consultoria">
    <application
-        android:label="atm_consultoria"
+        android:label="ATM Consultoria"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/atm_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"
