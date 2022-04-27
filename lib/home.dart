@@ -1,7 +1,3 @@
-import 'package:atm_consultoria/ScreenClient.dart';
-import 'package:atm_consultoria/ScreenCompany.dart';
-import 'package:atm_consultoria/ScreenContact.dart';
-import 'package:atm_consultoria/ScreenService.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -13,35 +9,19 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   void _openCompany() {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => ScreenCompany(),
-        ));
+    Navigator.pushNamed(context, '/company');
   }
 
   void _openClient() {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => ScreenClient(),
-        ));
+    Navigator.pushNamed(context, '/client');
   }
 
   void _openService() {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => ScreenService(),
-        ));
+    Navigator.pushNamed(context, '/service');
   }
 
   void _openContact() {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => ScreenContact(),
-        ));
+    Navigator.pushNamed(context, '/contact');
   }
 
   @override
